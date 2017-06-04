@@ -1,4 +1,8 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { fetchCrypto } from '../actions/index';
+
 
 class SearchBar extends Component {
     constructor(props) {
@@ -15,11 +19,13 @@ class SearchBar extends Component {
 
     onInputChange(event){
       this.setState({searchTerm: event.target.value})
-      console.log(this.state.searchTerm)
+      // console.log(this.state.searchTerm)
     }
 
     onFormSubmit(event){
       event.preventDefault();
+      this.props.fetchCrypto(this.state.searchTerm);
+      this.setState({searchTerm: ''})
     }
 
     render() {
@@ -37,4 +43,8 @@ class SearchBar extends Component {
     }
 }
 
-export default SearchBar;
+function mapDispatchToProps(dispatch){
+  return bindActionCreators({fetchCrypto}, dispatch);
+}
+
+export default connect(null, mapDispatchToProps)(SearchBar);
