@@ -9,15 +9,22 @@ class SearchBar extends Component {
         };
 
         this.onInputChange = this.onInputChange.bind(this);
+        this.onFormSubmit = this.onFormSubmit.bind(this);
+
     }
+
     onInputChange(event){
       this.setState({searchTerm: event.target.value})
       console.log(this.state.searchTerm)
     }
 
+    onFormSubmit(event){
+      event.preventDefault();
+    }
+
     render() {
         return (
-            <form className="input-group">
+            <form onSubmit={this.onFormSubmit} className="input-group">
                 <input placeholder="Enter ticker symbol of desired Cryptocurrency"
                   className="form-control"
                   onChange={this.onInputChange}
