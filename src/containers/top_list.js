@@ -12,22 +12,41 @@ class TopList extends Component {
 
   }
 
-  findCoin(top){
+  topCoin(top){
     // const list = _.sortBy(top.Data, 'SortOrder');
     // console.log('list of crypto by rank',list),
+    console.log('top 10', top)
+    var lowercase = top[0].name.toLowerCase();
+    var logo = `https://files.coinmarketcap.com/static/img/coins/64x64/${lowercase}.png`
     return (
-      <div key={top.Data.BTC.id}>
-        <h1>{top.Data.BTC.CoinName}</h1>
-        <img src={`http://www.cryptocompare.com/${top.Data.BTC.ImageUrl}`}></img>
-        <h2>{top.Data.BTC.Id}</h2>
-      </div>
+      <tr>
+        <td><img src={logo}></img></td>
+        <td>{top[0].name}</td>
+        <td>{top[0].symbol}</td>
+        <td>${top[0].price_usd}</td>
+        <td>{top[0].percent_change_24h}%</td>
+
+        {/* <td>{price}</td>
+        {percentage > 0 ? (<td style={{color: 'green'}}>{percentage}%</td>) : (<td style={{color: 'red'}}>{percentage}%</td>)} */}
+      </tr>
     )
   }
   render(){
     return(
-      <div>
-        {this.props.top.map(this.findCoin)}
-      </div>
+      <table className="table table-hover">
+        <thead>
+          <tr>
+            <th>Logo</th>
+            <th>Name</th>
+            <th>Ticker</th>
+            <th>Price in USD</th>
+            <th>24 HR Change</th>
+          </tr>
+        </thead>
+        <tbody>
+          {this.props.top.map(this.topCoin)}
+        </tbody>
+      </table>
     )
   }
 }
