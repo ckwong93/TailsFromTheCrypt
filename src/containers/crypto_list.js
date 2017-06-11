@@ -25,7 +25,7 @@ class CryptoList extends Component {
           <tr>
             <th>Ticker</th>
             <th>Price in USD</th>
-            <th>24 HR Change</th>
+            <th>1 HR Change</th>
           </tr>
         </thead>
         <tbody>
