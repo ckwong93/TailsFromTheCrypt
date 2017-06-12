@@ -1,6 +1,6 @@
 import axios from 'axios';
 const ROOT_URL = 'https://api.cryptonator.com/api/ticker/';
-const TOP_URL = 'https://api.coinmarketcap.com/v1/ticker/?limit=20'
+const TOP_URL = 'https://api.coinmarketcap.com/v1/ticker/?limit=10'
 
 
 export const FETCH_CRYPTO = 'FETCH_CRYPTO';

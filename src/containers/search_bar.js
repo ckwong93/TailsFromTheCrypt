@@ -25,7 +25,6 @@ class SearchBar extends Component {
     onFormSubmit(event){
       event.preventDefault();
       this.props.fetchCrypto(this.state.searchTerm);
-      this.props.topCrypto();
       this.setState({searchTerm: ''})
     }
 

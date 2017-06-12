@@ -21,34 +21,42 @@ class TopList extends Component {
       var lowercase = top[0][i].id.toLowerCase();
       var logo = `https://files.coinmarketcap.com/static/img/coins/64x64/${lowercase}.png`
       list.push(
-      <tr>
+      <tr key={top[0][i].id}>
         <td>{parseInt([i])+1}</td>
         <td><img src={logo}></img></td>
         <td>{top[0][i].name}</td>
         <td>{top[0][i].symbol}</td>
         <td>${top[0][i].price_usd}</td>
-        <td>{top[0][i].percent_change_24h}%</td>
-      </tr>)
+        { top[0][i].percent_change_24h > 0 ?
+          (<td style={{color: 'green'}}>{top[0][i].percent_change_24h}%</td>)
+          :
+          (<td style={{color: 'red'}}>{top[0][i].percent_change_24h}%</td>)}
+      </tr>
+
+    )
     }
     return list;
   }
   render(){
     return(
-      <table className="table table-hover">
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Logo</th>
-            <th>Name</th>
-            <th>Ticker</th>
-            <th>USD Price</th>
-            <th>24HR Change</th>
-          </tr>
-        </thead>
-        <tbody>
-          {this.topCoin(this.props.top)}
-        </tbody>
-      </table>
+      <div>
+        <h1 className="top-title">Top 20 Cryptocurrencies</h1><br></br>
+        <table className="table table-hover">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Logo</th>
+              <th>Name</th>
+              <th>Ticker</th>
+              <th>USD Price</th>
+              <th>24HR Change</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.topCoin(this.props.top)}
+          </tbody>
+        </table>
+      </div>
     )
   }
 }
