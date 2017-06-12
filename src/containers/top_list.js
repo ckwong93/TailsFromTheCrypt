@@ -6,58 +6,47 @@ import _ from 'lodash';
 
 
 class TopList extends Component {
-  componentDidMount(){
+  componentWillMount(){
     this.props.topCrypto();
-    console.log(this.props.top.Data)
-
   }
-
   topCoin(top){
-    // const list = _.sortBy(top.Data, 'SortOrder');
-    // console.log('list of crypto by rank',list),
-    console.log('top 10', top)
-    // var lowercase = top[0].name.toLowerCase();
-    // var logo = `https://files.coinmarketcap.com/static/img/coins/64x64/${lowercase}.png`
-    // return (
-    //   <tr>
-    //     <td><img src={logo}></img></td>
-    //     <td>{top[0].name}</td>
-    //     <td>{top[0].symbol}</td>
-    //     <td>${top[0].price_usd}</td>
-    //     <td>{top[0].percent_change_24h}%</td>
-    //     {/* <td>{price}</td>
-    //     {percentage > 0 ? (<td style={{color: 'green'}}>{percentage}%</td>) : (<td style={{color: 'red'}}>{percentage}%</td>)} */}
-    //   </tr>
-    // )
-
-    for (var i = 0; i < top.length; i++){
-      var lowercase = top[i].name.toLowerCase();
-      var logo = `https://files.coinmarketcap.com/static/img/coins/64x64/${lowercase}.png`
+    console.log('top props arr', this.props.top[0]);
+    if (!top[0]){
       return (
-        <tr>
-          <td><img src={logo}></img></td>
-          <td>{top[i].name}</td>
-          <td>{top[i].symbol}</td>
-          <td>${top[i].price_usd}</td>
-          <td>{top[i].percent_change_24h}%</td>
-        </tr>
+        <tr></tr>
       )
     }
+    var list = [];
+    for (var i = 0; i < top[0].length; i++){
+      var lowercase = top[0][i].id.toLowerCase();
+      var logo = `https://files.coinmarketcap.com/static/img/coins/64x64/${lowercase}.png`
+      list.push(
+      <tr>
+        <td>{parseInt([i])+1}</td>
+        <td><img src={logo}></img></td>
+        <td>{top[0][i].name}</td>
+        <td>{top[0][i].symbol}</td>
+        <td>${top[0][i].price_usd}</td>
+        <td>{top[0][i].percent_change_24h}%</td>
+      </tr>)
+    }
+    return list;
   }
   render(){
     return(
       <table className="table table-hover">
         <thead>
           <tr>
+            <th>Rank</th>
             <th>Logo</th>
             <th>Name</th>
             <th>Ticker</th>
-            <th>Price in USD</th>
-            <th>24 HR Change</th>
+            <th>USD Price</th>
+            <th>24HR Change</th>
           </tr>
         </thead>
         <tbody>
-          {this.props.top.map(this.topCoin)}
+          {this.topCoin(this.props.top)}
         </tbody>
       </table>
     )

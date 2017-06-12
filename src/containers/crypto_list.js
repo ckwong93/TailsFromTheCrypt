@@ -14,9 +14,7 @@ class CryptoList extends Component {
         {percentage > 0 ? (<td style={{color: 'green'}}>{percentage}%</td>) : (<td style={{color: 'red'}}>{percentage}%</td>)}
       </tr>
     )
-    // const name = cryptoData;
-    // console.log(this.props.crypto);
-    // console.log(this.props.crypto.ticker);
+
   }
   render(){
     return(
