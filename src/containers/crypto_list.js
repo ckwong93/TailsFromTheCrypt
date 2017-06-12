@@ -6,17 +6,15 @@ class CryptoList extends Component {
   renderCrypto(cryptoData){
     var name = cryptoData.ticker.base;
     var price = '$' + parseFloat(cryptoData.ticker.price).toFixed(2);
-    var percentage = (cryptoData.ticker.change * 100).toFixed(2);
+    var change = cryptoData.ticker.change;
     return (
       <tr>
         <td>{name}</td>
         <td>{price}</td>
-        {percentage > 0 ? (<td style={{color: 'green'}}>{percentage}%</td>) : (<td style={{color: 'red'}}>{percentage}%</td>)}
+        {change > 0 ? (<td style={{color: 'green'}}>{change}</td>) : (<td style={{color: 'red'}}>{change}</td>)}
       </tr>
     )
-    // const name = cryptoData;
-    // console.log(this.props.crypto);
-    // console.log(this.props.crypto.ticker);
+
   }
   render(){
     return(
@@ -25,7 +23,7 @@ class CryptoList extends Component {
           <tr>
             <th>Ticker</th>
             <th>Price in USD</th>
-            <th>1 HR Change</th>
+            <th>1HR Change</th>
           </tr>
         </thead>
         <tbody>

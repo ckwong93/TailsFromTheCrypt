@@ -1,6 +1,15 @@
-td, th {
+td {
   vertical-align: middle !important;
   text-align: center !important;
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+  color: #444444;
+}
+th {
+  vertical-align: middle !important;
+  text-align: center !important;
+  font-size: 33px;
+  font-family: 'Patua One', cursive;
 }
 .input-group {
   margin: 10px 0px;
@@ -13,4 +22,16 @@ td:first-of-type, td:first-of-type > div {
 td, img{
   height: 75px;
   width: 75px;
+}
+
+.table tbody tr:hover td, .table tbody tr:hover th {
+    background-color: #cccccc;
+}
+
+.top-title{
+  text-align: center;
+  color: #034694;
+  font-size: 50px;
+  font-family: 'Doppio One', sans-serif;
+
 }
