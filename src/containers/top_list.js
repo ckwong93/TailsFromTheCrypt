@@ -40,7 +40,7 @@ class TopList extends Component {
   render(){
     return(
       <div>
-        <h1 className="top-title">Top 20 Cryptocurrencies</h1><br></br>
+        <h1 className="top-title">Popular Cryptocurrencies</h1><br></br>
         <table className="table table-hover">
           <thead>
             <tr>
