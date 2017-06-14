@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import ReduxPromise from 'redux-promise';
 
 import Search from './components/search';
-import Nav from './components/home';
+import Nav from './components/nav';
 import TopList from './containers/top_list';
 import reducers from './reducers';
 
@@ -14,7 +14,7 @@ const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 ReactDOM.render(
 <div>
-  <Nav />
+  <Nav /><br></br><br></br>
   <Provider store={createStoreWithMiddleware(reducers)}>
     <BrowserRouter>
       <Switch>
@@ -25,5 +25,5 @@ ReactDOM.render(
   </Provider>
 </div>
 
-  , document.querySelector('.container'));
+  , document.querySelector('.container-box'));
   {/* <App /> */}
