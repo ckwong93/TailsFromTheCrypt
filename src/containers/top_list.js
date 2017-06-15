@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { topCrypto } from '../actions';
 import _ from 'lodash';
-
+import Nav from '../components/nav';
 
 class TopList extends Component {
   componentWillMount(){
@@ -40,6 +40,8 @@ class TopList extends Component {
   render(){
     return(
       <div>
+        <Nav />
+        
         <h1 className="top-title">Popular Cryptocurrencies</h1><br></br>
         <table className="table table-hover">
           <thead>
