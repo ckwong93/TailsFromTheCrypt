@@ -14,7 +14,6 @@ const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 ReactDOM.render(
 <div>
-  <Nav /><br></br><br></br>
   <Provider store={createStoreWithMiddleware(reducers)}>
     <BrowserRouter>
       <Switch>
@@ -26,4 +25,3 @@ ReactDOM.render(
 </div>
 
   , document.querySelector('.container-box'));
-  {/* <App /> */}
