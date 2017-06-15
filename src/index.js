@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import ReduxPromise from 'redux-promise';
 
 import Search from './components/search';
+import Nav from './components/nav';
 import TopList from './containers/top_list';
 import reducers from './reducers';
 
