@@ -52,25 +52,83 @@ td, img{
 .container-box {
     max-width: 576px;}
 */
+  .title {
+      font-size: 5rem;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 3px;
+    }
+    .slogan {
+      padding-left: 5em;
+    	font-size: 1.25rem;
+      font-family: 'Doppio One', sans-serif;
 
+    	}
     .header {
       /*display: flex;*/
-    	background-color: #00cdcd;
-      margin-bottom: 20px;
+    	background-color: #4e5353;
       color: black;
     }
 
-    .Nav a:hover{
+    .header a:hover{
       color: white;
       text-decoration: none;
     }
     .project-title{
       color: white;
-      font-size: 40px;
+      font-size: 30px;
     }
     .Navlinks {
-      color: #ceffff;
-      font-size: 30px;
+      color: #b5cdff;
+      font-size: 25px;
       margin: 0.5rem;
       text-align: right;
     }
+
+    .main-title-container {
+		padding: 17rem ;
+		background-color: white;
+		color: white;
+		background-image: url(./wallpaper.jpg);
+		background-position: center;
+		background-size: cover;
+	}
+
+  .arr-body {
+  text-align: center;
+  margin: 2.5em 0 0 0;
+  padding-right: 15em;
+}
+
+
+
+ a:hover .bottom-arr{
+  border: 0.5em solid #262929;
+}
+
+a:hover .bottom-arr:after {
+  border-top: 0.5em solid #262929;
+  border-right: 0.5em solid #262929;
+}
+
+
+.bottom-arr {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid #C1CDCD;
+  border-radius: 50%;
+  margin-left: 0.75em;
+}
+
+.bottom-arr:after {
+  content: '';
+	display: inline-block;
+  margin-top: 0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #C1CDCD;
+  border-right: 0.5em solid #C1CDCD;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}

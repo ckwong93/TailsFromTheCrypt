@@ -8,7 +8,7 @@ export default class Nav extends Component {
         <div className = "header">
           <Link to="/" className="project-title">Cryptopedia</Link>
           <Link to = "/top" className = "Navlinks pull-right" > Top Crypto </Link>
-          <Link to="/search " className="Navlinks pull-right ">Search</Link>
+          <Link to="/search" className="Navlinks pull-right ">Search</Link>
         </div>
 
     );
