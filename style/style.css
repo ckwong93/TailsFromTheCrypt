@@ -64,18 +64,9 @@ td, img{
       color: #C1CDCD;
 
     	}
-    .header {
-      /*display: flex;*/
-    	background-color: white;
-      color: black;
-    }
 
-    .header a:hover{
-      color: white;
-      text-decoration: none;
-    }
     .project-title{
-      color: black;
+      color: black !important;
       font-size: 30px;
     }
     .Navlinks {
@@ -83,8 +74,19 @@ td, img{
       font-size: 25px;
       margin: 0.5rem;
       text-align: right;
+      margin-top: 0px;
     }
-
+    .Navlinks a:hover{
+      color: white;
+      text-decoration: none;
+    }
+    .brand-logo{
+      color: black !important;
+    }
+    .brand-logo a:hover{
+      color: white !important;
+      text-decoration: none !important;
+    }
     .main-title-container {
 		padding: 17rem ;
 		background-color: white;
@@ -139,7 +141,7 @@ a:hover .bottom-arr:after {
 }
 
 .margintop{
-  margin-top: 40px;
+  margin-top: 20px;
 
 }
 
@@ -152,7 +154,7 @@ a:hover .bottom-arr:after {
 blockquote{
   display:block;
   background: #fff;
-  padding: 15px 20px 15px 45px;
+  padding: 45px 10px 15px 45px;
   margin: 0 0 10px;
   position: relative;
 
@@ -164,7 +166,7 @@ blockquote{
   text-align: justify;
 
   /*Borders - (Optional)*/
-  border-left: 15px solid black;
+  border-left: 15px solid black !important;
   border-right: 2px solid black;
 
   /*Box Shadow - (Optional)*/
@@ -189,4 +191,8 @@ blockquote::before{
 }
 .custom-button {
     width: 150px !important;
+}
+.nav-wrapper{
+  background-color:white;
+  color: black;
 }

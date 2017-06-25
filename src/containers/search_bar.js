@@ -30,14 +30,14 @@ class SearchBar extends Component {
 
     render() {
         return (
-          <div>
+          <div><br></br><br></br>
             <form onSubmit={this.onFormSubmit} className="input-group">
                 <input placeholder="Enter ticker symbol of desired Cryptocurrency"
                   className="form-control"
                   onChange={this.onInputChange}
                 />
                 <span className="input-group-btn">
-                    <button type="submit" className="btn btn-secondary">Submit</button>
+                    <button type="submit" className="btn btn-primary" style={{"background-color": "#0066FF"}}>Submit</button>
                 </span>
             </form><br></br><br></br>
           </div>
