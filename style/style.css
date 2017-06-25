@@ -61,11 +61,12 @@ td, img{
       padding-left: 5em;
     	font-size: 1.25rem;
       font-family: 'Doppio One', sans-serif;
+      color: #C1CDCD;
 
     	}
     .header {
       /*display: flex;*/
-    	background-color: #4e5353;
+    	background-color: white;
       color: black;
     }
 
@@ -74,11 +75,11 @@ td, img{
       text-decoration: none;
     }
     .project-title{
-      color: white;
+      color: black;
       font-size: 30px;
     }
     .Navlinks {
-      color: #b5cdff;
+      color: black;
       font-size: 25px;
       margin: 0.5rem;
       text-align: right;
@@ -131,4 +132,61 @@ a:hover .bottom-arr:after {
   -moz-transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
+}
+.section-title{
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+}
+
+.margintop{
+  margin-top: 40px;
+
+}
+
+.about-img{
+  margin-left: 15px;
+  height: 360px;
+  width: 420px;
+}
+
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 10px;
+  position: relative;
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+
+  /*Borders - (Optional)*/
+  border-left: 15px solid black;
+  border-right: 2px solid black;
+
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+.custom-button {
+    width: 150px !important;
 }

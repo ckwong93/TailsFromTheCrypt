@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem} from 'react-bootstrap';
 
-export default class Nav extends Component {
+export default class NavHeader extends Component {
 
     render() {
         return (
@@ -10,7 +11,6 @@ export default class Nav extends Component {
           <Link to = "/top" className = "Navlinks pull-right" > Top Crypto </Link>
           <Link to="/search" className="Navlinks pull-right ">Search</Link>
         </div>
-
     );
   }
 }
