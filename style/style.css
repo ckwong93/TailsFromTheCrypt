@@ -152,6 +152,12 @@ a:hover .bottom-arr:after {
   height: 360px;
   width: 420px;
 }
+.btc-img{
+  margin-right: 15px;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 60px;
+}
 
 blockquote{
   display:block;
