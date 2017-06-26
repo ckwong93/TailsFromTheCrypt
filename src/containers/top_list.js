@@ -41,7 +41,7 @@ class TopList extends Component {
     return(
       <div>
         <Nav />
-        
+
         <h1 className="top-title">Popular Cryptocurrencies</h1><br></br>
         <table className="table table-hover">
           <thead>

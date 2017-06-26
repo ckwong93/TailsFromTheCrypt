@@ -8,6 +8,7 @@ import ReduxPromise from 'redux-promise';
 import Search from './components/search';
 import Nav from './components/nav';
 import TopList from './containers/top_list';
+import Home from './components/home';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Switch>
         <Route path="/top" component={TopList} />
         <Route path="/search" component={Search} />
+        <Route path="/" component={Home} />
       </Switch>
     </BrowserRouter>
   </Provider>

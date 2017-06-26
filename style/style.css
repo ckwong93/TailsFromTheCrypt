@@ -52,25 +52,162 @@ td, img{
 .container-box {
     max-width: 576px;}
 */
-
-    .header {
-      /*display: flex;*/
-    	background-color: #00cdcd;
-      margin-bottom: 20px;
-      color: black;
+  .title {
+      font-size: 5rem;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 3px;
     }
+    .slogan {
+      padding-left: 5em;
+    	font-size: 1.25rem;
+      font-family: 'Doppio One', sans-serif;
+      color: #C1CDCD;
 
-    .Nav a:hover{
+    	}
+
+    .project-title{
+      color: black !important;
+      font-size: 30px;
+    }
+    .Navlinks {
+      color: black;
+      font-size: 25px;
+      margin: 0.5rem;
+      text-align: right;
+      margin-top: 0px;
+    }
+    .Navlinks a:hover{
       color: white;
       text-decoration: none;
     }
-    .project-title{
-      color: white;
-      font-size: 40px;
+    .brand-logo{
+      color: black !important;
     }
-    .Navlinks {
-      color: #ceffff;
-      font-size: 30px;
-      margin: 0.5rem;
-      text-align: right;
+    .brand-logo a:hover{
+      color: white !important;
+      text-decoration: none !important;
     }
+    .main-title-container {
+		padding: 17rem ;
+		background-color: white;
+		color: white;
+		background-image: url(./wallpaper.jpg);
+		background-position: center;
+		background-size: cover;
+    background-attachment: fixed;
+   background-repeat: no-repeat;
+	}
+
+  .arr-body {
+  text-align: center;
+  margin: 2.5em 0 0 0;
+  padding-right: 15em;
+}
+
+
+
+ a:hover .bottom-arr{
+  border: 0.5em solid #262929;
+}
+
+a:hover .bottom-arr:after {
+  border-top: 0.5em solid #262929;
+  border-right: 0.5em solid #262929;
+}
+
+
+.bottom-arr {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid #C1CDCD;
+  border-radius: 50%;
+  margin-left: 0.75em;
+}
+
+.bottom-arr:after {
+  content: '';
+	display: inline-block;
+  margin-top: 0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #C1CDCD;
+  border-right: 0.5em solid #C1CDCD;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.section-title{
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+}
+
+.margintop{
+  margin-top: 20px;
+
+}
+
+.about-img{
+  margin-left: 15px;
+  height: 360px;
+  width: 420px;
+}
+.btc-img{
+  margin-right: 15px;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 60px;
+}
+
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 45px 10px 15px 45px;
+  margin: 0 0 10px;
+  position: relative;
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+
+  /*Borders - (Optional)*/
+  border-left: 15px solid black !important;
+  border-right: 2px solid black;
+
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+.custom-button {
+    width: 150px !important;
+}
+.nav-wrapper{
+  background-color:white;
+  color: black;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(0,0,0,.1) !important;
+}
