@@ -22,14 +22,17 @@ export default class About extends Component {
              <h5>What does that even mean?</h5><br></br>
              In a nutshell, Cryptocurrencies are a new form of payments that can be used for transactions online. Unlike fiat currencies like Dollars and Euros,
              digital currencies are decentralized, anonymous, and instant. Without going too much further in detail, this means that these transactions
-             have less fees, are untraceable, and transfer much faster than those of traditional currencies.<br></br><br></br>
+             have minimal fees, are untraceable, and transfer much faster than those of traditional currencies.<br></br><br></br>
 
-             Bitcoin and Ethereum are great examples of cryptocurrencies. The purpose of this site is to provide users with a simple and easy-to-understand
-             resource for cryptocurrency and altcoins investment. Think of this as a starter kit towards jumpstarting your altcoin portfolio!<br></br>
+             The purpose of this site is to provide users with a simple and easy-to-understand resource for cryptocurrency and
+             altcoins investment. Think of this as a starter kit towards jumpstarting your altcoin portfolio! Let's begin with a quick introduction
+             to two of the most popular coins, Bitcoin and Ethereum.<br></br>
              <br></br><center>
                <Button className="custom-button" bsStyle="warning" style={{'background-color': '#f5b730', 'border':'none'}}>Bitcoin</Button> &nbsp; &nbsp;
                <Button className="custom-button" bsStyle="primary" style={{'background-color': '#4b4b4b', 'border':'none'}}>Ethereum</Button>
-             </center><br></br><br></br><br></br><br></br><br></br><br></br>
+             </center><br></br><br></br>
+             <hr/>
+             <br></br><br></br>
           </div>
         </div>
       </div>
