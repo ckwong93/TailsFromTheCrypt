@@ -152,7 +152,7 @@ a:hover .bottom-arr:after {
   height: 360px;
   width: 420px;
 }
-.btc-img{
+.btc-img, .eth-img{
   margin-right: 15px;
   height: 300px;
   width: 300px;
