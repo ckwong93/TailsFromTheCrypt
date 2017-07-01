@@ -12,8 +12,6 @@ export default class Home extends Component {
                 <NavHeader/>
                 <Cover />
                 <About />
-                <AboutBitcoin />
-                <AboutEth />
             </div>
 
         )
