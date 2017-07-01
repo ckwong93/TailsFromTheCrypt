@@ -35,7 +35,7 @@ td, img{
   font-family: 'Doppio One', sans-serif;
 
 }
-/*
+
 @media (min-width: 1200px)
 .container-box {
     max-width: 100%;
@@ -51,7 +51,7 @@ td, img{
 @media (min-width: 544px)
 .container-box {
     max-width: 576px;}
-*/
+
   .title {
       font-size: 5rem;
       font-family: 'Anton', sans-serif;
@@ -140,6 +140,7 @@ a:hover .bottom-arr:after {
 .section-title{
   font-family: 'Anton', sans-serif;
   font-size: 50px;
+  text-align: center;
 }
 
 .margintop{
@@ -152,13 +153,33 @@ a:hover .bottom-arr:after {
   height: 360px;
   width: 420px;
 }
-.btc-img{
+.btc-img, .eth-img{
   margin-right: 15px;
   height: 300px;
   width: 300px;
   margin-bottom: 60px;
+  /*-webkit-filter: drop-shadow(.5px .5px 0 black)
+                  drop-shadow(-.5px -.5px 0 white);
+    filter:drop-shadow(1px 1px 0 black)
+           drop-shadow(-1px -1px 0 white);*/
+}
+.eth-img{
+  margin-right: 15px;
+  height: 300px;
+  width: 200px;
+  margin-bottom: 60px;
 }
 
+.bitcoin-text{
+  font-size: 20px;
+  color: black;
+  font-family: 'Karla', serif;
+}
+.ethereum-text{
+  font-size: 20px;
+  color: white;
+  font-family: 'Karla', serif;
+}
 blockquote{
   display:block;
   background: #fff;
@@ -210,4 +231,62 @@ hr {
     margin-bottom: 1rem;
     border: 0;
     border-top: 2px solid rgba(0,0,0,.1) !important;
+}
+
+.bitcoin-page{
+background: #F7971E;  /* fallback for old browsers
+/*background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(270deg, #ffd200, #f7971e);
+background-size: 400% 400%;
+
+-webkit-animation: BtcAnimate 30s ease infinite;
+-moz-animation: BtcAnimate 30s ease infinite;
+animation: BtcAnimate 30s ease infinite;
+}
+
+@-webkit-keyframes BtcAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BtcAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes BtcAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+.ethereum-page{
+  background: #000000;  /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(270deg, #434343, #000000);
+  background-size: 400% 400%;
+
+  -webkit-animation: EthAnimate 40s ease infinite;
+  -moz-animation: EthAnimate 40s ease infinite;
+  animation: EthAnimate 40s ease infinite;
+}
+@-webkit-keyframes EthAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes EthAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes EthAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.roboto{
+  font-family: 'Roboto Condensed', sans-serif;
 }
