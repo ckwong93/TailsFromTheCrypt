@@ -172,7 +172,7 @@ a:hover .bottom-arr:after {
 
 .bitcoin-text{
   font-size: 20px;
-  color: #343a3b;
+  color: black;
   font-family: 'Karla', serif;
 }
 .ethereum-text{
@@ -233,27 +233,60 @@ hr {
     border-top: 2px solid rgba(0,0,0,.1) !important;
 }
 
-.gradient {
-  width: 100%;
-  height: 100%;
-background-position: center;
-background-size: cover;
-background-attachment: fixed;
-background-repeat: no-repeat;
-background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
 .bitcoin-page{
-background: #F7971E;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #F7971E;  /* fallback for old browsers
+/*background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(270deg, #ffd200, #f7971e);
+background-size: 400% 400%;
 
+-webkit-animation: BtcAnimate 30s ease infinite;
+-moz-animation: BtcAnimate 30s ease infinite;
+animation: BtcAnimate 30s ease infinite;
+}
+
+@-webkit-keyframes BtcAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BtcAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes BtcAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
 }
 .ethereum-page{
-  background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000;  /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(270deg, #434343, #000000);
+  background-size: 400% 400%;
 
+  -webkit-animation: EthAnimate 40s ease infinite;
+  -moz-animation: EthAnimate 40s ease infinite;
+  animation: EthAnimate 40s ease infinite;
+}
+@-webkit-keyframes EthAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes EthAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes EthAnimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.roboto{
+  font-family: 'Roboto Condensed', sans-serif;
 }

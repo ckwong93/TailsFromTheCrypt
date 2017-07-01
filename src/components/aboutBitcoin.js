@@ -13,12 +13,12 @@ export default class AboutBitcoin extends Component {
         <div id="#about">
           <center><h1 className="section-title w3-animate-top" style={{'color': 'black', 'font-size': '60px'}}>Bitcoin</h1></center><br></br>
           <div className="col-xs-12 col-md-8 bitcoin-text">
-            <h3 className="w3-animate-left">What is it?</h3>
+            <h3 className="w3-animate-left roboto">What is it?</h3>
             <p className="w3-animate-opacity">Bitcoin is a form of digital currency, created and held electronically. No one controls it. Bitcoins aren't printed, like dollars or euros – they're produced by people,
                and increasingly businesses, running computers all around the world, using software that solves mathematical problems. Bitcoins are mined (or created) over time,
                just like how fiat currencies are printed. However, this process is done over the web using computing power. <br></br>
              </p><br></br>
-             <h3 className="w3-animate-left">Advantages of Bitcoin</h3>
+             <h3 className="w3-animate-left roboto">Advantages of Bitcoin</h3>
              <ul className="w3-animate-opacity">
                <li>-No Taxes: Because Bitcoins are not regulated by a centralized government, there are no taxes </li>
                <li>-Anonymous: Bitcoins are anonymous, making buyers unindentifed and transactions untraceable</li>
