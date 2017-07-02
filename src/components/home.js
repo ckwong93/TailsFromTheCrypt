@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import NavHeader from '../components/nav';
 import Cover from '../components/cover';
 import About from '../components/about';
-import AboutBitcoin from '../components/AboutBitcoin';
-import AboutEth from '../components/AboutEth';
+import AboutBitcoin from '../components/aboutBitcoin';
+import AboutEth from '../components/aboutEth';
 
 export default class Home extends Component {
     render() {
