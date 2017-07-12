@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Navbar, NavItem} from 'react-materialize';
 
 export default class NavHeader extends Component {
 
