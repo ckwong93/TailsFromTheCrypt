@@ -53,18 +53,16 @@ td, img{
     max-width: 576px;}
 
   .title {
-      font-size: 5rem;
+      font-size: 70px;
       font-family: 'Anton', sans-serif;
       letter-spacing: 3px;
-      text-align: center;
       color: white;
 
     }
     .slogan {
-    	font-size: 1.25rem;
+    	font-size: 20px;
       font-family: 'Doppio One', sans-serif;
       color: black;
-      text-align: center;
 
     	}
 
@@ -91,7 +89,7 @@ td, img{
       text-decoration: none !important;
     }
     .main-title-container {
-		padding: 17rem ;
+		padding: 25rem ;
 		background-color: white;
 		color: white;
 		background-image: url(./background_image.jpg);
@@ -327,10 +325,13 @@ animation: BtcAnimate 30s ease infinite;
 }
 .about-col{
   padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .column-text{
   color: #706e6e;
   font-family: 'Lato';
+  font-size: 17px;
 
 }
 .about-icon{
@@ -346,3 +347,63 @@ animation: BtcAnimate 30s ease infinite;
   transform: scale(1.5);
   color: #696969;
  }
+
+ .flex-container{
+   display: flex;
+   flex-flow: row;
+
+ }
+
+ .flex-container2{
+   display: flex;
+   flex-flow: row;
+
+ }
+ .item1 {
+     -webkit-flex: 1;
+     flex: 1;
+     flex-wrap: wrap;
+
+ }
+
+ .item2 {
+     -webkit-flex: 1;
+     flex: 1;
+ }
+
+ .item3 {
+     -webkit-flex: 1;
+     flex: 1;
+ }
+
+ .item4 {
+     -webkit-flex: 1;
+     flex: 1;
+ }
+
+ .item5 {
+     -webkit-flex: 1;
+     flex: 1;
+ }
+
+ .item6 {
+     -webkit-flex: 1;
+     flex: 1;
+ }
+
+@media( max-width: 760px){
+  .flex-container{
+    display: flex;
+    flex-flow: column;
+
+  }
+
+  .flex-container2{
+    display: flex;
+    flex-flow: column;
+
+  }
+
+
+
+}
