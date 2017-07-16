@@ -308,11 +308,11 @@ animation: BtcAnimate 30s ease infinite;
   flex-grow: 2;
   font-size: 18px;
   padding-top: 20px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
   color: #706e6e;
   font-family: 'Lato';
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .about-gradient{
 
@@ -323,7 +323,6 @@ animation: BtcAnimate 30s ease infinite;
   font-size: 50px;
   text-align: center;
   padding-top: 80px;
-  padding-bottom: 20px;
   color: #002448;
 }
 .about-col{
