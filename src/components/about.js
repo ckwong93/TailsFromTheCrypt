@@ -10,22 +10,30 @@ export default class About extends Component {
     var stockImg = `https://blockgeeks.com/wp-content/uploads/2017/04/bitcoin-exchange.jpg`;
     return (
       <div className="about-gradient">
-        <h1 className="about-title">What are Cryptocurrencies?</h1>
+        <h1 className="about-title">What Are Cryptocurrencies?</h1>
 
         <container className="about-container">
             <span className="about-text">
                In a nutshell, Cryptocurrencies are a new form of payments that can be used for transactions online. Unlike fiat currencies like Dollars and Euros,
-               digital currencies are decentralized, anonymous, and instant. This means that these transactions have minimal fees, are untraceable, and transfer much faster than those of traditional currencies. The purpose of this site is to provide users with a simple and easy-to-understand resource for cryptocurrency and
-               altcoins investment. Think of this as a starter kit towards jumpstarting your altcoin portfolio! Let's begin with a quick introduction
-               to two of the most popular coins, Bitcoin and Ethereum.<br></br><br></br>
+               digital currencies are decentralized, anonymous, and instant. This means that these transactions have minimal fees, are untraceable, and transfer much faster than those of traditional currencies.
+               <br></br><br></br>
+              There are multiple reasons why these alternative currencies are disrupting the world. With a multitude of advantages and an ever-evolving ecosystem, now is the perfect time to
+              dip your toes into cryptocurrency investment. 
+               <br></br><br></br>
             </span><br></br>
         </container>
-        <div className="col-md-4"><center><Icon name="spinner" size="5x"/><br></br>asdfasdfasdf is asdfasdfasdf is asdfasdfasdf</center></div>
-        <div className="col-md-4"><center><Icon name="facebook" size="5x"/>/><br></br>sdfasdfasdf is asdfasdfasdf is asdfasdfasdfsdfasdfasdf is asdfasdfasdf is asdfasdfasdf</center></div>
-        <div className="col-md-4"><center><Icon name="google" size="5x"/>/><br></br>sdfasdfasdf is asdfasdfasdf is asdfasdfasdfsdfasdfasdf is asdfasdfasdf is asdfasdfasdf</center></div>
-        <div className="col-md-4"><center><Icon name="spinner" size="5x"/>/><br></br>sdfasdfasdf is asdfasdfasdf is asdfasdfasdfsdfasdfasdf is asdfasdfasdf is asdfasdfasdf</center></div>
-        <div className="col-md-4"><center><Icon name="facebook" size="5x"/>/><br></br>sdfasdfasdf is asdfasdfasdf is asdfasdfasdfsdfasdfasdf is asdfasdfasdf is asdfasdfasdf</center></div>
-        <div className="col-md-4"><center><Icon name="google" size="5x"/>/><br></br>sdfasdfasdf is asdfasdfasdf is asdfasdfasdfsdfasdfasdf is asdfasdfasdf is asdfasdfasdf</center></div>
+        <div className="col-md-4 about-col"><center><Icon name="lock" size="5x" className="grow about-icon"/><br></br><h4>Secure</h4><p className="column-text">
+        Because each individual user has their own hashed address, it is secure and easy to send payment to others. There are also a wide variety of security
+        measures such as hard wallets, e-wallets, and layered authentication. These layers of security protect coin holders from malicious attacks.
+        </p></center></div>
+        <div className="col-md-4 about-col"><center><Icon name="exchange" size="5x" className="grow about-icon"/><br></br><h4>Instant</h4><p className="column-text">All transactions via alt coins are sent instantly. There is no need to ever
+          worry about waiting multiple days for money to be sent to and from these mediums. In fact, there are also alt coins that specifically focus on instant transactions with minimal fees (XRP).</p></center></div>
+        <div className="col-md-4 about-col"><center><Icon name="line-chart" size="5x" className="grow about-icon"/><br></br><h4>Growth</h4><p className="column-text">A growing userbase means that there are new investors everyday. Money pooled into the alt coin industry is growing exponentially. What this means is that the value of our coins are growing at an alarming rate. Think stock market…but on steroids.</p></center></div>
+        <div className="col-md-4 about-col"><center><Icon name="users" size="5x" className="grow about-icon"/><br></br><h4>Community</h4><p className="column-text">Because alt coins are based on the internet, its online presence is extremely active. Sources like Reddit, Twitter, and Slack are great resources to chat with fellow investors about investment opportunities and strategies. Plus, most seasoned investors share all this information publicly!</p></center></div>
+        <div className="col-md-4 about-col"><center><Icon name="link" size="5x" className="grow about-icon"/><br></br><h4>Blockchain</h4><p className="column-text">In essence, a distributed ledger technology, Blockchain allows altcoins to be decentralized.
+        That is, there are no 3rd party middleman to rack up fees or taxes (aka government). This decentralisation is one of the revolutionary aspects of the technology.</p></center></div>
+        <div className="col-md-4 about-col"><center><Icon name="university" size="5x" className="grow about-icon"/><br></br><h4>Accessibility</h4><p className="column-text">Since coins are online based, all you need to access your currencies is an internet connection. Long gone
+        are the days of needing to drive to banking institutions. All coin transactions are sent and received over the web.</p></center></div>
 
       </div>
 
@@ -34,6 +42,9 @@ export default class About extends Component {
 }
 
 {/*
+  The purpose of this site is to provide users with a simple and easy-to-understand resource for cryptocurrency and
+  altcoins investment. Think of this as a starter kit towards jumpstarting your altcoin portfolio! Let's begin with a quick introduction
+  to two of the most popular coins, Bitcoin and Ethereum.
                Most altcoins are either Bitcoin or Ethereum based. What this means is that they are built using the same technologies as their base,
                but provide unique services. Each individual altcoin provides a special service or interaction. For example, Golems provides supercomputing processing power,
                Ripple provides instantaneous bank transactions, and Civic provides Identity Verification and Protection. With thousands of altcoins out there,

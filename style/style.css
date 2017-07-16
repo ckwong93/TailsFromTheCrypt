@@ -319,10 +319,31 @@ animation: BtcAnimate 30s ease infinite;
 }
 
 .about-title{
-  font-family: 'Anton', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 50px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 20px;
   color: #002448;
 }
+.about-col{
+  padding-bottom: 30px;
+}
+.column-text{
+  color: #706e6e;
+  font-family: 'Lato';
+
+}
+.about-icon{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #0088c8;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.5);
+  color: #696969;
+ }
