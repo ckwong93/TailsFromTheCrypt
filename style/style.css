@@ -463,3 +463,21 @@ background-repeat: no-repeat;
   font-family: 'Raleway', sans-serif;
 
 }
+
+.popular-overview{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 170px;
+  padding-right: 170px;
+}
+.popular-overview-title{
+  font-family: 'Raleway', sans-serif;
+
+}
+.popular-overview-text{
+  color: #706e6e;
+  font-family: 'Lato';
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
