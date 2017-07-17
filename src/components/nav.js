@@ -24,7 +24,6 @@ export default class NavHeader extends Component {
                 <div className="navbar-header">
                   <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navMain">
               <span className="glyphicon glyphicon-chevron-right" style={{"color":"white"}}></span>
-
               </button>
               <ul className="nav navbar-nav pull-left">
               <li className="nav-item">

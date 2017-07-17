@@ -72,7 +72,7 @@ td, img{
     }
     .Navlinks {
       color: white;
-      font-size: 25px;
+      font-size: 30px;
       margin: 0.5rem;
       text-align: right;
       margin-top: 0px;
@@ -89,7 +89,7 @@ td, img{
       text-decoration: none !important;
     }
     .main-title-container {
-		padding: 25rem ;
+		padding: 32rem ;
 		background-color: white;
 		color: white;
 		background-image: url(./background_image.jpg);
@@ -143,7 +143,7 @@ a:hover .bottom-arr:after {
   font-family: 'Anton', sans-serif;
   font-size: 50px;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -242,11 +242,12 @@ background: #F7971E;  /* fallback for old browsers
 /*background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
 /*background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 background: linear-gradient(270deg, #ffd200, #f7971e);
-background-size: 400% 400%;
+/*background-size: 400% 400%;*/
 
 -webkit-animation: BtcAnimate 30s ease infinite;
 -moz-animation: BtcAnimate 30s ease infinite;
 animation: BtcAnimate 30s ease infinite;
+overflow: hidden
 }
 
 @-webkit-keyframes BtcAnimate {
@@ -274,6 +275,7 @@ animation: BtcAnimate 30s ease infinite;
   -webkit-animation: EthAnimate 40s ease infinite;
   -moz-animation: EthAnimate 40s ease infinite;
   animation: EthAnimate 40s ease infinite;
+  overflow: hidden
 }
 @-webkit-keyframes EthAnimate {
     0%{background-position:0% 50%}

@@ -32,7 +32,7 @@ export default class Cover extends Component {
 // scrollreveal function to animate about section + columns
       sr.reveal('.title', config_title)
       sr.reveal('.slogan', config_slogan)
-      sr.reveal('.bottom-arr', config_arr)
+      // sr.reveal('.bottom-arr', config_arr)
 
 
 }
@@ -44,9 +44,9 @@ export default class Cover extends Component {
                             <div className="grid-item title "><center>Tails from the Crypt</center></div>
                             <div className="grid-item slogan "><center>Unlimited Potential&nbsp;&nbsp;- &nbsp;&nbsp;Unparalleled Growth</center></div>
                             <div className="arr-body">
-                                <a id="#about" onClick={this.animateAndScroll}>
+                                {/* <a id="#about" onClick={this.animateAndScroll}>
                                     <span className="bottom-arr"></span>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                   </div>
