@@ -472,10 +472,12 @@ background-repeat: no-repeat;
 }
 .popular-overview-title{
   font-family: 'Raleway', sans-serif;
+  color: #0088c8;
+
 
 }
 .popular-overview-text{
-  color: #706e6e;
+  color: #8c8b8b;
   font-family: 'Lato';
   font-size: 18px;
   padding-top: 20px;

@@ -26,6 +26,8 @@ export default class AboutTop extends Component {
       sr.reveal('.popular-slogan', config_slogan)
       sr.reveal('.popular-overview-title',{ move:0, duration:1000, scale: 1.5 }, 500)
       sr.reveal('.popular-overview-text',{ move:0, duration:1000 }, 500)
+      sr.reveal('.hr-line',{ move:0, duration:1000, delay: 1000 })
+
 
 
 }
@@ -43,11 +45,12 @@ export default class AboutTop extends Component {
           Here, you'll find twenty of the most active coins. Although Bitcoin and Ethereum tend to stay firm as
           number 1 and 2, the rest of the list changes pretty regularly, so make sure to check out this page often!
         </p>
-        <p className="popular-overview-text">
+        <p className="popular-overview-text"  style={{"padding-bottom":"30px", "padding-top":"10px"}}>
           We've also included a few important details about each of the currencies listed here. Leveraging the CoinMarketCap API, we've been able to extract up-to-date info
           that will make investing in these coins a breeze! With the ticker, price, and 24HR change, you'll get a
           quick snapshot of the coin's performance relative to its competition.
          </p>
+         <hr className="hr-line"></hr>
         </div>
      </div>
     )
