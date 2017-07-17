@@ -39,7 +39,7 @@ export default class AboutBitcoin extends Component {
   render(){
     var btcImg = `http://www.canbike.org/public/images/030114/Bitcoin_Logo.png`;
     return (
-      <div className="bitcoin-page" style={{"height": "700px"}}>
+      <div className="bitcoin-page" style={{"height": "400px"}}>
         <Nav />
         <br></br>
         <div id="#about">
@@ -50,13 +50,13 @@ export default class AboutBitcoin extends Component {
                and increasingly businesses, running computers all around the world, using software that solves mathematical problems. Bitcoins are mined (or created) over time,
                just like how fiat currencies are printed. However, this process is done over the web using computing power. <br></br>
              </p><br></br>
-             <h3 className="roboto">Advantages of Bitcoin</h3>
+             {/* <h3 className="roboto">Advantages of Bitcoin</h3>
              <ul>
                <li>-No Taxes: Because Bitcoins are not regulated by a centralized government, there are no taxes </li>
                <li>-Anonymous: Bitcoins are anonymous, making buyers unindentifed and transactions untraceable</li>
                <li>-No Chargebacks: Unlike credit cards, transaction reversals do not exist </li>
              </ul><br></br>
-             <hr/>
+             <hr/> */}
           </div>
           <div className="col-xs-6 col-md-4 margintop">
             <center><img className="btc-img img-rounded btc-img" src={btcImg}></img></center>

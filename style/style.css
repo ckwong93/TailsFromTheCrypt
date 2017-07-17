@@ -158,10 +158,10 @@ a:hover .bottom-arr:after {
   height: 360px;
   width: 420px;
 }
-.btc-img, .eth-img{
+.btc-img{
   margin-right: 15px;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin-bottom: 60px;
   /*-webkit-filter: drop-shadow(.5px .5px 0 black)
                   drop-shadow(-.5px -.5px 0 white);
@@ -170,9 +170,9 @@ a:hover .bottom-arr:after {
 }
 .eth-img{
   margin-right: 15px;
-  height: 300px;
-  width: 200px;
-  margin-bottom: 60px;
+  height: 240px;
+  width: 160px;
+  margin-bottom: 30px;
 }
 
 .bitcoin-text{
@@ -237,6 +237,9 @@ hr {
     border: 0;
     border-top: 2px solid rgba(0,0,0,.1) !important;
 }
+
+hr-divider{
+border-top: 0px;}
 
 .bitcoin-page{
 background: #F7971E;  /* fallback for old browsers
@@ -567,5 +570,43 @@ background-repeat: no-repeat;
   font-family: 'Lato';
   font-size: 18px;
   padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.primer-div{
+  background-color: #f4f6f7;
+}
+.primer-title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 80px;
+  color: #002448;
+  padding-top: 40px;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding-bottom:40px
+}
+.primer-text{
+  flex-grow: 2;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: #706e6e;
+  font-family: 'Lato';
+  padding-bottom: 20px;
+}
+.primer-overview{
+  /*padding-top: 30px;*/
+  /*padding-bottom: 30px;*/
+  padding-left: 170px;
+  padding-right: 170px;
+}
+
+.primer-overview-text{
+  color: #7e7c7c;
+  font-family: 'Lato';
+  font-size: 18px;
   padding-bottom: 10px;
 }

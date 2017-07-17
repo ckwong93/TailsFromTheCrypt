@@ -17,7 +17,10 @@ export default class About extends Component {
         easing: 'ease',
       }
 // scrollreveal function to animate about section + columns
-      sr.reveal('.about-container', config)
+      sr.reveal('.about-title', config)
+      sr.reveal('.primer-title', config)
+      sr.reveal('.about-text',{ move:0, duration: 500 }, 1000)
+      sr.reveal('.primer-overview-text',{ move:0, duration:1000 }, 500)
       sr.reveal('.about-col',{ duration: 500 }, 200)
     }
   render(){
@@ -46,7 +49,7 @@ export default class About extends Component {
           <div className="item3 about-col"><center><Icon name="line-chart" size="5x" className="grow about-icon" refs="box"/><br></br><h4>Growth</h4><p className="column-text">A growing userbase means that there are new investors everyday. Money pooled into the alt coin industry is growing exponentially.
             What this means is that the value of our coins are growing at an alarming rate. Think stock market…but on steroids.</p></center></div>
         </container>
-        <container className="flex-container2">
+        <container className="flex-container2" stye={{"padding-bottom":"0px"}}>
           <div className="item4 about-col"><center><Icon name="users" size="5x" className="grow about-icon" refs="box"/><br></br><h4>Community</h4><p className="column-text">Because alt coins are based on the internet, its online presence is extremely active. Sources like Reddit, Twitter, and Slack are great resources
             to chat with fellow investors about investment opportunities and strategies. Plus, most seasoned investors share all this information publicly!</p></center></div>
           <div className="item5 about-col"><center><Icon name="link" size="5x" className="grow about-icon" refs="box"/><br></br><h4>Blockchain</h4><p className="column-text">In essence, a distributed ledger technology, Blockchain allows altcoins to be decentralized.
@@ -54,6 +57,25 @@ export default class About extends Component {
           <div className="item6 about-col"><center><Icon name="university" size="5x" className="grow about-icon" refs="box"/><br></br><h4>Accessibility</h4><p className="column-text">Since coins are online based, all you need to access your currencies is an internet connection. Long gone
           are the days of needing to drive to banking institutions. All coin transactions are sent and received over the web.</p></center></div>
         </container>
+        <hr className="hr-divider" style={{"margin-bottom": "0px"}}></hr>
+        <div className="primer-div">
+          <h1 className="primer-title">A Primer to Cryptocurrencies</h1>
+          <div className="primer-overview">
+              <p className="primer-overview-text">
+                 Although there are a ton of Cryptocurrencies out there to learn, the two most significant and crucial to the crypto ecosystem are Bitcoin and Ethereum, which you have probably
+                 already heard of. These two currencies, often compared to their gold and silver counterparts, are extremely important to learn and understand. Without these two coins,
+                 the altcoin market would not be the growing powerhouse that it is today.
+              </p>
+              <p className="primer-overview-text">
+                Many other alternative coins, like Ripple, Golems, Waves, and Civic are based on either Bitcoin or Ethereum. This means that they leverage the same technologies that stem from
+                BTC and ETH. However, they also branch out and have their own unique DNA, which makes altcoins different. Think about altcoins as relatives to BTC and ETH. There is a shared, historical
+                DNA among them, but at the same time, new DNA that differentiates them. Before we dive in deeper, let's briefly learn about these two master coins
+              </p>
+              <br></br>
+          </div>
+          <hr className="hr-divider" style={{"margin-bottom": "0px"}}></hr>
+
+        </div>
       </div>
 
     )
