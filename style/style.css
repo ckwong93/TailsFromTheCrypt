@@ -408,7 +408,7 @@ overflow: hidden
      background-color: #0088c8;
      height: 60px;
      transition: background-color 1s ease 0s;
-     
+
 
  }
 
@@ -479,6 +479,90 @@ background-repeat: no-repeat;
 
 }
 .popular-overview-text{
+  color: #7e7c7c;
+  font-family: 'Lato';
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+
+.popular-container {
+padding: 17rem ;
+background-color: white;
+color: white;
+background-image: url(./popular.jpg);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+
+.popular-title{
+  font-size: 60px;
+  font-family: 'Doppio One', sans-serif;
+
+}
+.popular-slogan{
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.popular-overview{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 170px;
+  padding-right: 170px;
+}
+.popular-overview-title{
+  font-family: 'Raleway', sans-serif;
+  color: #0088c8;
+
+
+}
+.popular-overview-text{
+  color: #7e7c7c;
+  font-family: 'Lato';
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+/**/
+
+.search-container {
+padding: 17rem ;
+background-color: white;
+color: white;
+background-image: url(./stars.jpg);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+
+.search-title{
+  font-size: 60px;
+  font-family: 'Doppio One', sans-serif;
+
+}
+.search-slogan{
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.search-overview{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 170px;
+  padding-right: 170px;
+}
+.search-overview-title{
+  font-family: 'Raleway', sans-serif;
+  color: #0088c8;
+
+
+}
+.search-overview-text{
   color: #7e7c7c;
   font-family: 'Lato';
   font-size: 18px;
