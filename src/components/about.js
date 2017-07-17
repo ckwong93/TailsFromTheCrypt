@@ -18,7 +18,7 @@ export default class About extends Component {
       }
 // scrollreveal function to animate about section + columns
       sr.reveal('.about-container', config)
-      sr.reveal('.about-col',{ duration: 1000 }, 200)
+      sr.reveal('.about-col',{ duration: 500 }, 200)
     }
   render(){
     var stockImg = `https://blockgeeks.com/wp-content/uploads/2017/04/bitcoin-exchange.jpg`;
