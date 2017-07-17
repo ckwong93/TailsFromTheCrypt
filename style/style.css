@@ -34,6 +34,7 @@ td, img{
   font-size: 50px;
   font-family: 'Doppio One', sans-serif;
   padding-top: 20px;
+  padding-bottom: 20px;
 
 }
 
@@ -73,10 +74,9 @@ td, img{
     }
     .Navlinks {
       color: white;
-      font-size: 30px;
-      margin: 0.5rem;
-      text-align: right;
+      font-size: 40px;
       margin-top: 0px;
+      font-family: 'Allan', sans-serif
     }
     .Navlinks a:hover{
       color: white;
@@ -408,6 +408,8 @@ overflow: hidden
      background-color: #0088c8;
      height: 60px;
      transition: background-color 1s ease 0s;
+     
+
  }
 
  ul.dropdown-menu {
@@ -477,7 +479,7 @@ background-repeat: no-repeat;
 
 }
 .popular-overview-text{
-  color: #8c8b8b;
+  color: #7e7c7c;
   font-family: 'Lato';
   font-size: 18px;
   padding-top: 20px;

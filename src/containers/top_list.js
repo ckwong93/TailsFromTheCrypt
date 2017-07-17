@@ -11,7 +11,7 @@ class TopList extends Component {
     this.props.topCrypto();
   }
   componentDidMount(){
-    // sr.reveal('.table',{ duration: 500 }, 200)
+    sr.reveal('.top-title',{ duration: 1000, move: 0, delay:500 })
 
   }
   topCoin(top){

@@ -26,7 +26,7 @@ export default class AboutTop extends Component {
       sr.reveal('.popular-slogan', config_slogan)
       sr.reveal('.popular-overview-title',{ move:0, duration:1000, scale: 1.5 }, 500)
       sr.reveal('.popular-overview-text',{ move:0, duration:1000 }, 500)
-      sr.reveal('.hr-line',{ move:0, duration:1000, delay: 1000 })
+      sr.reveal('.hr-line',{ move:0, duration:1000})
 
 
 
@@ -42,7 +42,7 @@ export default class AboutTop extends Component {
           <h1 className="popular-overview-title">Overview</h1>
           <p className="popular-overview-text">With thousands of cryptocurrencies in the market, it's easy to get lost figuring out which coins
           to research or invest in. That's why we created this list of the most popular cryptocurrencies.
-          Here, you'll find twenty of the most active coins. Although Bitcoin and Ethereum tend to stay firm as
+          Here, you'll find 50 of the most active coins. Although Bitcoin and Ethereum tend to stay firm as
           number 1 and 2, the rest of the list changes pretty regularly, so make sure to check out this page often!
         </p>
         <p className="popular-overview-text"  style={{"padding-bottom":"30px", "padding-top":"10px"}}>
