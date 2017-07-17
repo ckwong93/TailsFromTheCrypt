@@ -33,6 +33,7 @@ td, img{
   color: #034694;
   font-size: 50px;
   font-family: 'Doppio One', sans-serif;
+  padding-top: 20px;
 
 }
 
@@ -438,5 +439,27 @@ overflow: hidden
     flex-flow: column;
 
   }
+
+}
+
+
+.popular-container {
+padding: 17rem ;
+background-color: white;
+color: white;
+background-image: url(./popular.jpg);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+
+.popular-title{
+  font-size: 60px;
+  font-family: 'Doppio One', sans-serif;
+
+}
+.popular-slogan{
+  font-family: 'Raleway', sans-serif;
 
 }

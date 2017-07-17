@@ -3,11 +3,16 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { topCrypto } from '../actions';
 import _ from 'lodash';
-import Nav from '../components/nav';
+import sr from '../components/scrollReveal.js';
+
 
 class TopList extends Component {
   componentWillMount(){
     this.props.topCrypto();
+  }
+  componentDidMount(){
+    // sr.reveal('.table',{ duration: 500 }, 200)
+
   }
   topCoin(top){
     console.log('top props arr', this.props.top[0]);
@@ -37,12 +42,11 @@ class TopList extends Component {
     }
     return list;
   }
+
   render(){
     return(
       <div>
-        <Nav />
-
-        <h1 className="top-title">Popular Cryptocurrencies</h1><br></br>
+        <h1 className="top-title">Top Performing Altcoins</h1><br></br>
         <table className="table table-hover">
           <thead>
             <tr>

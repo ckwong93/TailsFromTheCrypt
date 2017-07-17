@@ -8,7 +8,8 @@ import reduxThunk from 'redux-thunk';
 
 import Search from './components/search';
 import Nav from './components/nav';
-import TopList from './containers/top_list';
+// import TopList from './containers/top_list';
+import Top from './components/top';
 import Home from './components/home';
 import AboutBitcoin from './components/aboutBitcoin';
 import AboutEth from './components/aboutEth';
@@ -22,7 +23,7 @@ ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <BrowserRouter>
       <Switch>
-          <Route path="/top" component={TopList} />
+          <Route path="/top" component={Top} />
           <Route path="/search" component={Search} />
           <Route path="/bitcoin" component={AboutBitcoin} />
           <Route path="/ethereum" component={AboutEth} />
