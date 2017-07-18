@@ -6,3 +6,7 @@ $(window).scroll(function() {
       $('.opaque-navbar').removeClass('opaque');
   }
 });
+
+scrollUp(){
+  $(window).scrollTop(0)
+}

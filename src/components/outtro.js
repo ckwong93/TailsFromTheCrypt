@@ -20,6 +20,9 @@ export default class Outtro extends Component{
       sr.reveal('.primer-title', config)
       sr.reveal('.primer-overview-text',{ move:0, duration:1000 }, 500)
     }
+    scrollUp(){
+      $(window).scrollTop(0)
+    }
   render(){
     return(
       <div className="primer-div">
@@ -37,9 +40,9 @@ export default class Outtro extends Component{
             </p>
             <br></br>
             <center>
-              <Link to="/top"><Button className="custom-button grow-btn" bsStyle="warning" style={{'background-color': '#0088c8', 'border':'none'}}>Top Crypto</Button></Link>
+              <Link to="/top" onClick={this.scrollUp}><Button className="custom-button grow-btn" bsStyle="warning" style={{'background-color': '#0088c8', 'border':'none'}}>Top Crypto</Button></Link>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              <Link to="/search"><Button className="custom-button grow-btn" bsStyle="primary" style={{'background-color': '#696969', 'border':'none'}}>Search Crypto</Button></Link>
+              <Link to="/search" onClick={this.scrollUp}><Button className="custom-button grow-btn" bsStyle="primary" style={{'background-color': '#696969', 'border':'none'}}>Search Crypto</Button></Link>
              </center>
         </div>
         <hr className="hr-divider" style={{"margin-bottom": "0px"}}></hr>

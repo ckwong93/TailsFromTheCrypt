@@ -3,7 +3,9 @@ import {Link} from 'react-router-dom';
 import { Navbar, NavItem, NavDropdown, MenuItem, Nav } from 'react-bootstrap';
 
 export default class NavHeader extends Component {
-
+  scrollUp(){
+    $(window).scrollTop(0)
+  }
     render() {
         return (
             // <nav className="navbar navbar-light">
@@ -27,17 +29,17 @@ export default class NavHeader extends Component {
               </button>
               <ul className="nav navbar-nav pull-left">
               <li className="nav-item">
-                     <Link to="/" className="Navlinks">TailsFromTheCrypt</Link>
+                     <Link to="/" className="Navlinks" onClick={this.scrollUp}>TailsFromTheCrypt</Link>
               </li>
             </ul>
                 </div>
                 <div className="collapse navbar-collapse" id="navMain">
                   <ul className="nav navbar-nav pull-right">
                     <li className="nav-item">
-                      <Link to="/top" className="Navlinks">Top Crypto</Link>
+                      <Link to="/top" className="Navlinks" onClick={this.scrollUp}>Top Crypto</Link>
                   </li>
                    <li className="nav-item">
-                     <Link to="/search" className="Navlinks">Search</Link>
+                     <Link to="/search" className="Navlinks" onClick={this.scrollUp}>Search</Link>
                     </li>
                   </ul>
                 </div>
