@@ -658,7 +658,6 @@ background-repeat: no-repeat;
    font-family: 'Lato';
    font-size: 16px;
    padding-bottom: 10px;
-   padding-left:50px;
    /*display: inline;*/
    /*-webkit-flex: 4;*/
    /*flex: 4;*/
@@ -668,12 +667,12 @@ background-repeat: no-repeat;
    color: #7e7c7c;
    font-family: 'Lato';
    font-size: 16px;
-   padding-bottom: 10px;
-   padding-left:50px;
+   /*padding-bottom: 10px;*/
+   padding-left:10px;
    /*display: inline;*/
    /*-webkit-flex: 4;*/
    /*flex: 4;*/
-   /*flex: 4;*/
+   flex: 2;
  }
  .random-img{
    height: 150px !important;
@@ -686,8 +685,10 @@ background-repeat: no-repeat;
 .random-data-container{
   padding-left: 170px;
   padding-right: 170px;
+  padding-top: 0px;
   padding-bottom: 20px;
   display: flex;
+  /*text-align: center;*/
   /*flex-flow: row;*/
 }
 
