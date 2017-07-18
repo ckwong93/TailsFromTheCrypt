@@ -179,6 +179,7 @@ a:hover .bottom-arr:after {
   font-size: 20px;
   color: black;
   font-family: 'Karla', serif;
+  
 }
 .ethereum-text{
   font-size: 20px;
@@ -600,8 +601,8 @@ background-repeat: no-repeat;
 .primer-overview{
   /*padding-top: 30px;*/
   /*padding-bottom: 30px;*/
-  padding-left: 170px;
-  padding-right: 170px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .primer-overview-text{

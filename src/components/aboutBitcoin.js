@@ -58,7 +58,7 @@ export default class AboutBitcoin extends Component {
              </ul><br></br>
              <hr/> */}
           </div>
-          <div className="col-xs-6 col-md-4 margintop">
+          <div className="col-xs-6 col-md-4">
             <center><img className="btc-img img-rounded btc-img" src={btcImg}></img></center>
           </div>
         </div>
