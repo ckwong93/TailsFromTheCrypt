@@ -33,7 +33,6 @@ export default class NavHeader extends Component {
                 </div>
                 <div className="collapse navbar-collapse" id="navMain">
                   <ul className="nav navbar-nav pull-right">
-
                     <li className="nav-item">
                       <Link to="/top" className="Navlinks">Top Crypto</Link>
                   </li>
