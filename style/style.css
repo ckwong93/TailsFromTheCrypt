@@ -179,7 +179,7 @@ a:hover .bottom-arr:after {
   font-size: 20px;
   color: black;
   font-family: 'Karla', serif;
-  
+
 }
 .ethereum-text{
   font-size: 20px;
@@ -611,3 +611,11 @@ background-repeat: no-repeat;
   font-size: 18px;
   padding-bottom: 10px;
 }
+
+.grow-btn {
+  transition: all .2s ease-in-out;
+}
+.grow-btn:hover {
+  transform: scale(1.25);
+  color: #696969;
+ }
