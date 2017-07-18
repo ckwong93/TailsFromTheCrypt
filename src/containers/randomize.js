@@ -8,7 +8,7 @@ class Randomize extends Component {
   constructor(props) {
       super(props);
 
-      this.state = { item: "1182"
+      this.state = { item: "7605"
       // by default item is btc id
       };
 

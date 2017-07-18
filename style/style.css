@@ -656,7 +656,48 @@ background-repeat: no-repeat;
  .random-overview-text{
    color: #7e7c7c;
    font-family: 'Lato';
-   font-size: 18px;
-   padding-top: 20px;
+   font-size: 16px;
    padding-bottom: 10px;
+   padding-left:50px;
+   /*display: inline;*/
+   /*-webkit-flex: 4;*/
+   /*flex: 4;*/
+   /*flex: 4;*/
  }
+ .random-overview-text-list{
+   color: #7e7c7c;
+   font-family: 'Lato';
+   font-size: 16px;
+   padding-bottom: 10px;
+   padding-left:50px;
+   /*display: inline;*/
+   /*-webkit-flex: 4;*/
+   /*flex: 4;*/
+   /*flex: 4;*/
+ }
+ .random-img{
+   height: 150px !important;
+   width: 150px !important;
+   /*flex-basis: 150px;*/
+   /*flex: 1;*/
+   /*-webkit-flex: 1;*/
+   /*flex: 1;*/
+ }
+.random-data-container{
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-bottom: 20px;
+  display: flex;
+  /*flex-flow: row;*/
+}
+
+
+.random-list-title{
+  text-align: center;
+  color: #034694;
+  font-size: 50px;
+  font-family: 'Doppio One', sans-serif;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
