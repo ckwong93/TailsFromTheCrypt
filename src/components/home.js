@@ -4,6 +4,7 @@ import Cover from '../components/cover';
 import About from '../components/about';
 import AboutBitcoin from '../components/aboutBitcoin';
 import AboutEth from '../components/aboutEth';
+import Outtro from '../components/outtro';
 
 export default class Home extends Component {
     render() {
@@ -14,6 +15,7 @@ export default class Home extends Component {
                 <About />
                 <AboutBitcoin />
                 <AboutEth />
+                <Outtro />
             </div>
 
         )

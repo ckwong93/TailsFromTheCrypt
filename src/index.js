@@ -11,8 +11,8 @@ import Nav from './components/nav';
 // import TopList from './containers/top_list';
 import Top from './components/top';
 import Home from './components/home';
-import AboutBitcoin from './components/aboutBitcoin';
-import AboutEth from './components/aboutEth';
+// import AboutBitcoin from './components/aboutBitcoin';
+// import AboutEth from './components/aboutEth';
 import Signin from './components/auth/signin';
 import reducers from './reducers';
 
@@ -25,8 +25,8 @@ ReactDOM.render(
       <Switch>
           <Route path="/top" component={Top} />
           <Route path="/search" component={Search} />
-          <Route path="/bitcoin" component={AboutBitcoin} />
-          <Route path="/ethereum" component={AboutEth} />
+          {/* <Route path="/bitcoin" component={AboutBitcoin} /> */}
+          {/* <Route path="/ethereum" component={AboutEth} /> */}
           <Route path="/signin" component={Signin} />
           <Route path="/" component={Home} />
       </Switch>
