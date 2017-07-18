@@ -39,7 +39,7 @@ export default class Outtro extends Component{
             <center>
               <Link to="/top"><Button className="custom-button grow-btn" bsStyle="warning" style={{'background-color': '#0088c8', 'border':'none'}}>Top Crypto</Button></Link>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-               <Link to="/search"><Button className="custom-button grow-btn" bsStyle="primary" style={{'background-color': '#696969', 'border':'none'}}>Search Crypto</Button></Link>
+              <Link to="/search"><Button className="custom-button grow-btn" bsStyle="primary" style={{'background-color': '#696969', 'border':'none'}}>Search Crypto</Button></Link>
              </center>
         </div>
         <hr className="hr-divider" style={{"margin-bottom": "0px"}}></hr>
