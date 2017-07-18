@@ -40,7 +40,10 @@ export default class NavHeader extends Component {
                   </li>
                    <li className="nav-item">
                      <Link to="/search" className="Navlinks" onClick={this.scrollUp}>Search</Link>
-                    </li>
+                   </li>
+                   <li className="nav-item">
+                     <Link to="/random" className="Navlinks" onClick={this.scrollUp}>Random</Link>
+                   </li>
                   </ul>
                 </div>
               </div>

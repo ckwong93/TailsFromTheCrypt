@@ -8,11 +8,9 @@ import reduxThunk from 'redux-thunk';
 
 import Search from './components/search';
 import Nav from './components/nav';
-// import TopList from './containers/top_list';
 import Top from './components/top';
 import Home from './components/home';
-// import AboutBitcoin from './components/aboutBitcoin';
-// import AboutEth from './components/aboutEth';
+import Random from './components/randomEntry';
 import Signin from './components/auth/signin';
 import reducers from './reducers';
 
@@ -25,8 +23,7 @@ ReactDOM.render(
       <Switch>
           <Route path="/top" component={Top} />
           <Route path="/search" component={Search} />
-          {/* <Route path="/bitcoin" component={AboutBitcoin} /> */}
-          {/* <Route path="/ethereum" component={AboutEth} /> */}
+          <Route path="/random" component={Random} />
           <Route path="/signin" component={Signin} />
           <Route path="/" component={Home} />
       </Switch>
