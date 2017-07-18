@@ -10,7 +10,7 @@ export default class Search extends Component {
     return (
       <div>
         <Nav />
-        <AboutTop />
+        <AboutSearch />
         <SearchBar />
         <CryptoList />
       </div>
