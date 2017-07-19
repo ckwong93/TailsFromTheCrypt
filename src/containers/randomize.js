@@ -23,8 +23,7 @@ class Randomize extends Component {
     // sets item in state to random number in api id array
     this.setState({item: API_ID_ARR.API_ID_ARR[Math.floor(Math.random()*API_ID_ARR.API_ID_ARR.length)]});
     console.log(this.state.item);
-    this.props.randomCrypto(this.state.item)
-
+    this.props.randomCrypto(this.state.item);
 
   }
   render(){
