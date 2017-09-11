@@ -2,7 +2,7 @@ import axios from 'axios';
 const ROOT_URL = 'https://api.cryptonator.com/api/ticker/';
 const TOP_URL = 'https://api.coinmarketcap.com/v1/ticker/?limit=20'
 const TEST_URL= `https://cors-anywhere.herokuapp.com/http://api.coinmarketcap.com/v1/ticker/`;
-const RANDOM_URL = 'https://www.cryptocompare.com/api/data/coinsnapshotfullbyid/?id='
+const RANDOM_URL = 'https://cors-anywhere.herokuapp.com/http://www.cryptocompare.com/api/data/coinsnapshotfullbyid/?id='
 const API_URL = 'http://localhost:3090;'
 
 export const FETCH_CRYPTO = 'FETCH_CRYPTO';
