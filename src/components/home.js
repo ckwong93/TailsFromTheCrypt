@@ -13,7 +13,7 @@ export default class Home extends Component {
                 <NavHeader/>
                 <Cover />
                 <About />
-                <AboutBitcoin />
+                {/* <AboutBitcoin /> */}
                 <AboutEth />
                 <Outtro />
             </div>
