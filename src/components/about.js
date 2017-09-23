@@ -58,6 +58,12 @@ export default class About extends Component {
           are the days of needing to drive to banking institutions. All coin transactions are sent and received over the web.</p></center></div>
         </container>
         <hr className="hr-divider" style={{"margin-bottom": "0px"}}></hr>
+        <div>
+          <div className="bitcoininfo-container">
+            {/* <h1 className="bitcoininfo-title">Bitcoin</h1> */}
+          </div>
+       </div>
+
         <div className="primer-div">
           <h1 className="primer-title">A Primer to Cryptocurrencies</h1>
           <div className="primer-overview">

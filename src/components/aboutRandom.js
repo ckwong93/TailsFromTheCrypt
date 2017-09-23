@@ -42,6 +42,7 @@ export default class AboutRandom extends Component{
         </div>
         <div className="random-overview">
           <h1 className="search-overview-title">Expand your Portfolio</h1>
+          
           <p className="random-overview-text">After getting your feet wet learning about all the different altcoins there are out there, it might be a little intimidating
             figuring out which are worth learning and follwing. Furthermore, the explanations of many of these coins are often confusing and hard to understand. One disadvantage
             of cryptocurrencies is that the terminology is so dense and scattered, many people end up investing without truly knowing what product they're putting money into.

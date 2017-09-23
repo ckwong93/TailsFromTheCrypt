@@ -41,13 +41,9 @@ export default class Cover extends Component {
             <div>
                   <div className="main-title-container">
                         <div className="grid-row-item-row title-row">
-                            <div className="grid-item title "><center>Tails from the Crypt</center></div>
-                            <div className="grid-item slogan "><center>Unlimited Potential&nbsp;&nbsp;- &nbsp;&nbsp;Unparalleled Growth</center></div>
-                            <div className="arr-body">
-                                {/* <a id="#about" onClick={this.animateAndScroll}>
-                                    <span className="bottom-arr"></span>
-                                </a> */}
-                            </div>
+                            <div className="grid-item popular-title">Blockchain Investment</div>
+                            {/* <div className="grid-item slogan "><center>Unlimited Potential&nbsp;&nbsp;- &nbsp;&nbsp;Unparalleled Growth</center></div> */}
+
                         </div>
                   </div>
             </div>
