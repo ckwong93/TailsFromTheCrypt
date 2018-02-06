@@ -22,7 +22,9 @@ export default class NavHeader extends Component {
             //   </ul>
             // </nav>
             <div className="navbar navbar-fixed-top opaque-navbar">
-              <div className="container">
+            <div className="container" style={{
+              "margin-left": "0px", "margin-right": "0px", "width": "100%"
+            }}>
                 <div className="navbar-header">
                   <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navMain">
               <span className="glyphicon glyphicon-chevron-right" style={{"color":"white"}}></span>
